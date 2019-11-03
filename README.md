@@ -1,23 +1,23 @@
 # Volo! -- An Android App
-The came from HackTX 2019 hosted by Freetail Hackers @University of Texas at Austin with Anqing Chen, Jianchen Gu, Nicholas Chu
+This idea spawned from HackTX 2019 - hosted by Freetail Hackers @The University of Texas at Austin - with Anqing Chen, Jianchen Gu, and Nicholas Chu
 
 ### Features
-- Let certified organizations add events to the map and let everyone know
-- Supported by MongoDB Stitch backend so it's always synced
+- Lets certified non-profit organizations add volunteering events to a map for everyone to know
+- Supported by MongoDB Stitch backend to keep all the events synced
 - Quick zoom to your current location
-- Ability to add event from current and selected location
-- Google Maps Integration for direction (Long press address)
+- Google Maps Integration for navigation from current location (Accessed by long pressing address)
 
 ### Dependencies
-- Mapbox map and its Annotation Plugin for display
-- [android-floating-action-button](https://github.com/Clans/FloatingActionButton "android-floating-action-button") library by Jerzy Chalupski.
+- Mapbox SDK and its Annotation Plugin for map displays
+- [android-floating-action-button](https://github.com/Clans/FloatingActionButton "android-floating-action-button") library by Jerzy Chalupski
 - MongoDB Database for Realtime Database and Authentication
 
 ### Future Plans
 - Polish UX/UI
 - Third party auth
+- Ability to add event from current and selected location
 - Auto search web for events and add them to server periodically
-- filter events by start and stop time
+- Filter events by start and stop time
 
 ### Known Bugs
-- Handling multiple events at one location
+- Handling multiple events at one location (Events overlap each other)
