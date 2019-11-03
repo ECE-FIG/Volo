@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">onthemap</string>
+    <string name="stitch_client_app_id">onthemap-zqvdd</string>
+    <string name="title_activity_info">InfoActivity</string>
+</resources>

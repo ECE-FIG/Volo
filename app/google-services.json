@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "747773135420",
+    "firebase_url": "https://maptest-b0bf3.firebaseio.com",
+    "project_id": "maptest-b0bf3",
+    "storage_bucket": "maptest-b0bf3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747773135420:android:a6cc653181cbfc84",
+        "android_client_info": {
+          "package_name": "com.anqingchen.javatest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747773135420-s73o9v8cnpgf5cm8e1naar5gu4l9snmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmWPi1ggq8P0RMs_RY2ACX9lFsXvM7Gls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747773135420-s73o9v8cnpgf5cm8e1naar5gu4l9snmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

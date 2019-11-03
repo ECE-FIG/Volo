@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".EventActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/eventAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    </com.google.android.material.appbar.AppBarLayout>
+    <EditText
+        android:id="@+id/eventNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Event name"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/eventTimeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventNameText"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/time"/>
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/eventTimeIcon"
+        android:layout_alignBottom="@id/eventTimeIcon"
+        android:onClick="startDatePicker"
+        android:layout_marginStart="30dp"
+        android:textSize="18sp"
+        android:text="Start Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textView7"
+        android:layout_alignBottom="@id/eventTimeIcon"
+        android:onClick="startTimePicker"
+        android:layout_marginStart="30dp"
+        android:textSize="18sp"
+        android:text="Start Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/eventTimeIcon"
+        android:layout_below="@id/textView7"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@id/textView7"
+        android:onClick="endDatePicker"
+        android:textSize="18sp"
+        android:text="End Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textView8"
+        android:layout_alignBottom="@id/textView9"
+        android:onClick="endTimePicker"
+        android:textSize="18sp"
+        android:text="End Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/eventOrganization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/organization"
+        android:layout_below="@+id/eventTimeIcon"
+        android:layout_alignStart="@id/eventTimeIcon"
+        android:layout_marginTop="80dp"/>
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView9"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@id/eventLocationIcon"
+        android:layout_marginStart="30dp"
+        android:textSize="18sp"
+        android:hint="Volunteer Organization" />
+    <ImageView
+        android:id="@+id/eventLocationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location"
+        android:layout_below="@+id/eventOrganization"
+        android:layout_alignStart="@id/eventTimeIcon"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@id/eventLocationIcon"
+        android:layout_marginStart="30dp"
+        android:textSize="18sp"
+        android:hint="Location" />
+    <ImageView
+        android:id="@+id/eventDescIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit"
+        android:layout_below="@id/eventLocationIcon"
+        android:layout_alignStart="@id/eventTimeIcon"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText7"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@id/eventLocationIcon"
+        android:layout_marginStart="30dp"
+        android:textSize="18sp"
+        android:hint="Details" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Create Event" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/eventToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+</RelativeLayout>
