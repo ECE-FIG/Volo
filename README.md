@@ -1,4 +1,4 @@
-# Volo! -- An Android App
+# Volo! - An Android App
 This idea spawned from HackTX 2019 - hosted by Freetail Hackers @The University of Texas at Austin - with Anqing Chen, Jianchen Gu, and Nicholas Chu
 
 ### Features
